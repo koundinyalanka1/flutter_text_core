@@ -1,0 +1,13 @@
+[package]
+name = "text_core"
+version = "0.1.0"
+edition = "2021"
+license = "Proprietary"
+description = "Text files: encodings, line endings, search and JSON formatting."
+
+[dependencies]
+doc_encoding = { path = "../../../../doc_common/crates/doc_encoding" }
+
+[dev-dependencies]
+# Fixed-seed mutation and bounded test runs (tests/mutate.rs).
+doc_testkit = { path = "../../../../doc_common/crates/doc_testkit" }

@@ -1,0 +1,16 @@
+[package]
+name = "text_ffi"
+version = "0.1.0"
+edition = "2021"
+license = "Proprietary"
+description = "The Rust FFI layer of the text engine, for dart:ffi."
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+text_core = { path = "../text_core" }
+doc_encoding = { path = "../../../../doc_common/crates/doc_encoding" }
+doc_ffi = { path = "../../../../doc_common/crates/doc_ffi" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
